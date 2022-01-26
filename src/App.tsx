@@ -6,7 +6,8 @@ import styled from "styled-components";
 import Contact from "./pages/Contact";
 
 const StyledContact = styled(Contact)`
-
+background-image: url('https://media.istockphoto.com/photos/development-web-developer-picture-id698430010?s=612x612');
+background-color: black;
 `
 
 function App() {

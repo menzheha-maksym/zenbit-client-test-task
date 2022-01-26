@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const Div = styled.div`
     max-width: 563px;
-    border: 1px solid black;
 `
 
 const Span = styled.span`
@@ -82,6 +81,7 @@ const Button = styled.button`
     height: 73px;
 
     background: #FAD34F;
+    border: none;
     border-radius: 500px;
 
     font-family: Apercu Arabic Pro;
