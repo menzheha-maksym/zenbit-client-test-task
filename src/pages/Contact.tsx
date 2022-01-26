@@ -8,17 +8,30 @@ import Cloud from '../images/Cloud.png'
 const Image = styled.img`
     position: absolute;
     right: 0;
+
+    /* @media screen and (max-width: 1024px) {
+        right: 0;
+    } */
 `
 
 const CloudImage = styled.img`
     position: absolute;
     top: 10%;
+    right: 0;
 `
 
 const StyledContactInputGroupDiv = styled.div`
     position: absolute;
     top: 10%;
     left: 10%;
+
+    /* @media screen and (max-width: 768px) {
+        left: 15%;
+    } */
+
+    @media screen and (max-width: 680px) {
+        
+    }
 `
 
 const StyledYellowCircleUp = styled.svg`

@@ -3,6 +3,10 @@ import styled from 'styled-components';
 
 const Div = styled.div`
     max-width: 563px;
+
+    @media screen and (max-width: 680px) {
+        width: 90%;
+    }
 `
 
 const Span = styled.span`
@@ -91,6 +95,10 @@ const Button = styled.button`
     line-height: 18px;
 
     color: #FFFFFF;;
+
+    @media screen and (max-width: 680px) {
+        width: 100%;
+    }
 `
 
 
