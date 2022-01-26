@@ -20,10 +20,10 @@ const Contact: React.FC<{}> = ({ }) => {
 
     return (
         <>
+            <Image src={BackgroundImage} />
             <StyledContactInputGroupDiv>
                 <ContactInputGroup />
             </StyledContactInputGroupDiv >
-            <Image src={BackgroundImage} />
             <Footer />
         </>
     )

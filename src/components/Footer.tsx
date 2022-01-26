@@ -54,12 +54,6 @@ export const Footer: React.FC<{}> = ({ }) => {
         <>
             <Div>
                 <PurpleCircle />
-                <IconContainer>
-                    <StyledFontAwesomeIcon icon={faInstagram} />
-                    <StyledFontAwesomeIcon icon={faTwitter} />
-                    <StyledFontAwesomeIcon icon={faFacebookF} />
-                    <StyledFontAwesomeIcon icon={faPinterestP} />
-                </IconContainer>
                 <PurpleCircle width="398" height="238" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M218.884 225.942C175.22 265.761 108.448 263.637 69.745 221.198C31.0418 178.758 35.0633 112.073 78.7274 72.2535C122.391 32.4338 189.163 34.5579 227.867 76.9977C266.57 119.438 262.548 186.122 218.884 225.942Z" fill="#F472B7" />
                     <path d="M104.344 129.984C106.961 132.853 108.006 129.478 110.957 126.787C113.909 124.095 117.654 123.11 115.033 120.236C112.412 117.362 107.903 117.223 104.951 119.915C101.995 122.602 101.723 127.11 104.344 129.984Z" fill="white" />
@@ -78,7 +72,12 @@ export const Footer: React.FC<{}> = ({ }) => {
                     <path d="M21.9868 69.05C21.9868 66.241 24.2649 69.05 27.0766 69.05C29.8856 69.05 32.1663 66.241 32.1663 69.05C32.1663 71.8591 29.8882 74.1398 27.0766 74.1398C24.2649 74.1398 21.9868 71.8617 21.9868 69.05Z" fill="white" />
                     <path d="M27.0872 58.2664C27.0872 53.0982 31.2772 48.9108 36.4428 48.9108C41.6084 48.9108 45.7985 53.1008 45.7985 58.2664C45.7985 63.4321 41.6084 57.9055 36.4428 57.9055C31.2772 57.9055 27.0872 63.4321 27.0872 58.2664Z" fill="white" />
                 </GreenIdk>
-
+                <IconContainer>
+                    <StyledFontAwesomeIcon icon={faInstagram} />
+                    <StyledFontAwesomeIcon icon={faTwitter} />
+                    <StyledFontAwesomeIcon icon={faFacebookF} />
+                    <StyledFontAwesomeIcon icon={faPinterestP} />
+                </IconContainer>
             </Div>
         </>
     )
