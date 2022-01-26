@@ -3,10 +3,16 @@ import styled from "styled-components";
 import { ContactInputGroup } from "../components/ContactInputGroup";
 import { Footer } from "../components/Footer";
 import BackgroundImage from '../images/image.png'
+import Cloud from '../images/Cloud.png'
 
 const Image = styled.img`
     position: absolute;
     right: 0;
+`
+
+const CloudImage = styled.img`
+    position: absolute;
+    top: 10%;
 `
 
 const StyledContactInputGroupDiv = styled.div`
@@ -36,6 +42,7 @@ const Contact: React.FC<{}> = ({ }) => {
 
     return (
         <>
+            <CloudImage src={Cloud} />
             <Image src={BackgroundImage} />
 
             <StyledYellowCircleUp width="122" height="121" viewBox="0 0 122 121" fill="none" xmlns="http://www.w3.org/2000/svg">
