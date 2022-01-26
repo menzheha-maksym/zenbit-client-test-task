@@ -83,6 +83,14 @@ const Button = styled.button`
 
     background: #FAD34F;
     border-radius: 500px;
+
+    font-family: Apercu Arabic Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #FFFFFF;;
 `
 
 
