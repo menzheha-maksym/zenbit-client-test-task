@@ -37,6 +37,13 @@ const StyledPurpleCircle = styled.svg`
     top: 45%;
 `
 
+const StyledEclipse = styled.svg`
+    position: absolute;
+    left: 45%;
+    top: 2%;
+    
+`
+
 const Contact: React.FC<{}> = ({ }) => {
 
 
@@ -65,6 +72,11 @@ const Contact: React.FC<{}> = ({ }) => {
                 <path d="M106.752 83.1596C106.752 87.7062 103.065 83.1596 98.5138 83.1596C93.9672 83.1596 90.2758 87.7062 90.2758 83.1596C90.2758 78.613 93.963 74.9215 98.5138 74.9215C103.065 74.9215 106.752 78.6087 106.752 83.1596Z" fill="white" />
                 <path d="M98.4969 100.614C98.4969 108.979 91.7151 115.756 83.3543 115.756C74.9935 115.756 68.2117 108.974 68.2117 100.614C68.2117 92.2528 74.9935 101.198 83.3543 101.198C91.7151 101.198 98.4969 92.2528 98.4969 100.614Z" fill="white" />
             </StyledYellowCircleDown>
+
+            <StyledEclipse width="87" height="87" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.1" cx="43.5" cy="43.5" r="43.5" fill="#FAD34F" />
+            </StyledEclipse>
+
 
             <StyledContactInputGroupDiv>
                 <ContactInputGroup />
