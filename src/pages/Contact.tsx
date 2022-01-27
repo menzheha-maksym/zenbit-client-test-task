@@ -57,7 +57,7 @@ const StyledEclipse = styled.svg`
     
 `
 
-const Contact: React.FC<{}> = ({ }) => {
+const Contact: React.FC = ({ }) => {
 
 
     return (
