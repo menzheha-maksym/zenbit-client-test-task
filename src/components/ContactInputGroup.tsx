@@ -1,5 +1,6 @@
-import React from "react";
+import React, { FormEvent, useState } from "react";
 import styled from 'styled-components';
+import { gql, useMutation } from "urql";
 
 const Div = styled.div`
     max-width: 563px;
@@ -101,18 +102,57 @@ const Button = styled.button`
     }
 `
 
+const ContactMutation = gql`
+    mutation CreateContact($input: ContactInput!){
+        createContact(input: $input) {
+            id
+            name
+            email
+            message
+        }
+    }
+`
 
-export const ContactInputGroup: React.FC<{}> = ({ }) => {
+export const ContactInputGroup: React.FC = ({ }) => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
+    const [state, executeMutation] = useMutation(ContactMutation)
+
+    const sendContact = (event: FormEvent) => {
+        event.preventDefault();
+        const input = {
+            name,
+            email,
+            message,
+        }
+        executeMutation({ input });
+    }
 
     return (
         <>
             <Div>
-                <Span>Reach out to us!</Span>
-                <Input placeholder="Your name*" />
-                <Input placeholder="Your email*" />
-                <TextArea placeholder="Your message*"/>
-                <Button>Send message</Button>
+                <form onSubmit={sendContact}>
+                    <Span>Reach out to us!</Span>
+                    <Input
+                        name="name"
+                        value={name}
+                        onChange={e => setName(e.target.value)}
+                        placeholder="Your name*" />
+                    <Input
+                        name="email"
+                        value={email}
+                        type="email"
+                        onChange={e => setEmail(e.target.value)}
+                        placeholder="Your email*" />
+                    <TextArea
+                        name="message"
+                        value={message}
+                        onChange={e => setMessage(e.target.value)}
+                        placeholder="Your message*" />
+                    <Button disabled={state.fetching} type="submit">Send message</Button>
+                </form>
             </Div>
         </>
     )
