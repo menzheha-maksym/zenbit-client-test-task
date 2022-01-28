@@ -1,7 +1,7 @@
 import { createClient } from "urql";
 
 const client = createClient({
-  url: process.env.GRAPHQL_URL || "http://localhost:3001/graphql" ,
+  url: process.env.GRAPHQL_URL! ,
 });
 
 export default client;
